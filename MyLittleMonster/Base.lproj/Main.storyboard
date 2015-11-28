@@ -98,11 +98,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="5Jk-tA-soE">
                                 <rect key="frame" x="170" y="124" width="260" height="98"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="Osb-l4-Myb">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="Osb-l4-Myb" customClass="DragImg" customModule="MyLittleMonster" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
                                         <animations/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="5Nr-XV-EAG">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="5Nr-XV-EAG" customClass="DragImg" customModule="MyLittleMonster" customModuleProvider="target">
                                         <rect key="frame" x="165" y="0.0" width="95" height="98"/>
                                         <animations/>
                                     </imageView>
@@ -183,6 +183,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="foodImg" destination="5Nr-XV-EAG" id="FSX-LP-zd1"/>
+                        <outlet property="heartImg" destination="Osb-l4-Myb" id="05V-JL-NO4"/>
                         <outlet property="monsterImg" destination="rAO-ZJ-Ct2" id="VE7-D8-114"/>
                     </connections>
                 </viewController>
